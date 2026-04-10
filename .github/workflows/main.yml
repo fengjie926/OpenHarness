@@ -17,7 +17,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
       - name: Add upstream repo
-        run: git remote add upstream https://github.com/original-owner/original-repo.git
+        run: git remote add upstream git@github.com:HKUDS/OpenHarness.git
       - name: Fetch upstream
         run: git fetch upstream
       - name: Merge upstream
